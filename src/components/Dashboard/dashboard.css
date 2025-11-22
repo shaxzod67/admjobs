@@ -1,0 +1,123 @@
+/* =============================== */
+/*   GLOBAL WRAPPER                */
+/* =============================== */
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* =============================== */
+  /*   FORM BLOCK                    */
+  /* =============================== */
+  
+  .dashboard-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-form input,
+  .dashboard-form .ant-select {
+    width: 240px !important;
+  }
+  
+  .dashboard-form button {
+    height: 40px;
+    padding: 0 20px;
+    font-weight: 500;
+  }
+  
+  /* =============================== */
+  /*   TABLE BLOCK (scroll-safe)     */
+  /* =============================== */
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-wrapper .ant-table {
+    min-width: 800px; /* jadval elementlari siqilib ketmasin */
+  }
+  
+  /* =============================== */
+  /*   ANTD MODIFY (professional UI) */
+  /* =============================== */
+  
+  .ant-table-thead > tr > th {
+    background: #fafafa !important;
+    font-weight: 600 !important;
+    font-size: 14px;
+  }
+  
+  .ant-table-tbody > tr > td {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  /* Tahrirlash / O‘chirish tugmalari */
+  .ant-btn {
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 6px !important;
+  }
+  
+  .ant-btn-primary {
+    background: #1677ff !important;
+    border-color: #1677ff !important;
+  }
+  
+  .ant-btn-dangerous {
+    background: #ff4d4f !important;
+    border-color: #ff4d4f !important;
+    color: white;
+  }
+  
+  /* =============================== */
+  /*   MODAL UI PATCH                */
+  /* =============================== */
+  
+  .ant-modal-content {
+    border-radius: 10px !important;
+  }
+  
+  .ant-modal-header {
+    border-radius: 10px 10px 0 0 !important;
+    background: #fafafa !important;
+  }
+  
+  .ant-modal-title {
+    font-weight: 600 !important;
+  }
+  
+  /* =============================== */
+  /*   SELECT Placeholder fix        */
+  /* =============================== */
+  
+  .ant-select-selection-placeholder {
+    color: #999 !important;
+  }
+  
+  /* =============================== */
+  /*   CLEAN SCROLLBAR (chrome)     */
+  /* =============================== */
+  
+  .table-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 6px;
+  }
+.button-delete{
+    color: white;
+    background-color: #1677ff 
+}  

@@ -1,0 +1,133 @@
+/* ====== ASOSIY WRAPPER ====== */
+.boss-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    background: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* ====== TITLE ====== */
+  .boss-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+  }
+  
+  /* ====== TABLE WRAPPER ====== */
+  .table-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;   /* Mobil qurilmalarda scroll bo‘ladi */
+  }
+  
+  /* Jadval ichidagi tugmalar */
+  .table-wrapper .ant-btn {
+    min-width: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
+  
+  /* Green / Red rows */
+  .green-row {
+    background: #d9f7be !important;
+  }
+  .red-row {
+    background: #ffa39e !important;
+  }
+  
+  /* =============================
+        RESPONSIVE BO‘LIMI
+     ============================ */
+  
+  /* 💻 TV ekranlar (1600px+) */
+  @media (min-width: 1600px) {
+    .boss-wrapper {
+      padding: 60px;
+    }
+    .boss-title {
+      font-size: 42px;
+    }
+    .table-wrapper {
+      max-width: 1600px;
+    }
+  }
+  
+  /* 🖥️ Katta monitorlar (1024px – 1599px) */
+  @media (max-width: 1599px) {
+    .boss-title {
+      font-size: 34px;
+    }
+    .table-wrapper {
+      max-width: 1200px;
+    }
+  }
+  
+  /* 📱 Tablet (768px – 1023px) */
+  @media (max-width: 1023px) {
+    .boss-wrapper {
+      padding: 30px;
+    }
+    .boss-title {
+      font-size: 28px;
+    }
+    .table-wrapper {
+      padding: 15px;
+    }
+  
+    /* Tugmalar yonma-yon sig‘may qolsa pastga tushadi */
+    .ant-btn {
+      margin-bottom: 6px;
+      width: 100%;
+    }
+  }
+  
+  /* 📲 Mobil (600px – 767px) */
+  @media (max-width: 767px) {
+    .boss-title {
+      font-size: 24px;
+    }
+    .boss-wrapper {
+      padding: 20px;
+    }
+    .table-wrapper {
+      padding: 12px;
+    }
+  
+    /* Jadvalni kengaytirish */
+    .ant-table {
+      font-size: 12px;
+    }
+  
+    .ant-btn {
+      width: 100%;
+      min-width: 100px;
+      height: 34px;
+      font-size: 12px;
+    }
+  }
+  
+  /* 📟 Kichik telefonlar (380px ↓) */
+  @media (max-width: 380px) {
+    .boss-title {
+      font-size: 20px;
+    }
+  
+    .table-wrapper {
+      padding: 10px;
+    }
+  
+    .ant-btn {
+      padding: 0 10px;
+      height: 32px;
+    }
+  }
+  

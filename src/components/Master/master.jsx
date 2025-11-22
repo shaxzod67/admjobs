@@ -120,6 +120,8 @@ function Master() {
 
   return (
     <>
+
+    <h2>Master Page</h2>
       <Table dataSource={Blog} rowKey="id" rowClassName={rowClassName}>
         <Table.Column title="F.I.SH" dataIndex="fish" />
         <Table.Column title="Bo‘lim" dataIndex="bolim" />

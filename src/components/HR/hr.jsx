@@ -137,8 +137,8 @@ function HRPage() {
 
       <style>
         {`
-          .green-row { background: #d9f7be !important; }
-          .red-row { background: #ffa39e !important; }
+          .green-row { background: #82E02F !important; }
+          .red-row { background: #ED857B !important; }
         `}
       </style>
     </>

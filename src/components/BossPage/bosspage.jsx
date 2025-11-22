@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Table, Button, notification } from "antd";
 import { db } from "../../firebase";
+import "./BossPage.css";
 import { collection, getDocs, updateDoc, doc, addDoc } from "firebase/firestore";
 
 function BossPage() {

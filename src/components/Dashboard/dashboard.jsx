@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Dashboard.css"
 import {
   addDoc,
   collection,
@@ -93,7 +94,6 @@ function Dashboard() {
   // -------------------------------
   const handleDelete = async (id) => {
     await deleteDoc(doc(db, "blogs", id));
-    alert("Ma'lumot o‘chirildi");
 
     getData();
   };
@@ -185,7 +185,7 @@ function Dashboard() {
               >
                 Tahrirlash
               </Button>
-              <Button danger onClick={() => handleDelete(item.id)}>
+              <Button className="Button-delete" danger onClick={() => handleDelete(item.id)}>
                 O‘chirish
               </Button>
             </>
